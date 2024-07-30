@@ -1,13 +1,13 @@
 {
     "builds":[{
-        "src":"E-COMMERCE/wsgi.py",
+        "src":"airline/wsgi.py",
         "use":"@vercel/python",
         "config":{"maxLambdaSize":"15mb","runtime":"python3.12"}
     }],
     "routes":[
         {
             "src":"/(.*)",
-            "dest":"E-COMMERCE/wsgi"
+            "dest":"airline/wsgi"
         }
     ]   
 
